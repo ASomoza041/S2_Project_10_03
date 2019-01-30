@@ -4,10 +4,10 @@
    Case Problem 3
 
    Pixal Arts and Entertainment Animation Styles
-   Author: 
-   Date:   
+   Author: Alex A Somoza 
+   Date: 01-29-19  
 
-   Filename: 
+   Filename: paa_animate.css
    
    Sprite animation is created using the paa_bat.png, 
    paa_bfly.png, and paa_fox.png image files.
@@ -20,7 +20,20 @@
 
 
 /* Transition Effects */
+nav#gameLinks a {
+    position: relative;
+    color: white;
+    transition: color 0.5s;
+}
 
+nav#gameLinks a:hover {
+    color: rgb(255, 194, 99);
+}
+
+nav#gameLinks a::after {
+    content: "";
+    width: 0%;
+}
 
 
 
@@ -30,4 +43,3 @@
 
 
 /* Animation Styles */
-
