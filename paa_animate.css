@@ -49,6 +49,7 @@ nav#gameLinks a:hover::after {
 }
 
 /* Sprite Styles */
+/*  */
 div.sprite {
     position: absolute;
 }
@@ -60,6 +61,7 @@ div#bat {
     left: -50px;
     background: url(paa_bat.png) left center no-repeat;
     background-size: cover;
+    animation: playSprite 2s steps(39) infinite, flyRight 8s linear infinite;
 }
 
 div#butterfly {
@@ -69,6 +71,7 @@ div#butterfly {
     left: -50px;
     background: url(paa_bfly.png) left center no-repeat;
     background-size: cover;
+    animation: playSprite 1s 3s steps(33) infinite, flyRight 6s cubic-bezier(0, 1, 0.73, 0) infinite;
 }
 
 div#fox {
@@ -78,12 +81,37 @@ div#fox {
     right: 10px;
     background: url(paa_fox.png) left center no-repeat;
     background-size: cover;
+    animation: playSprite 3.5s 4s steps(27) infinite;
 }
 
 
 /* Animation Styles */
+/* The code below hold the code for the animations. The code creates names for the animations and what that specific animation does.   */
 @keyframes playSprite {
     100% {
         background-position: right center;
+    }
+}
+
+@keyframes flyRight {
+    25% {
+        top: 150px;
+    }
+
+    50% {
+        top: 55px;
+    }
+
+    65% {
+        top: 120px;
+    }
+
+    90% {
+        top: 50px;
+    }
+
+    100% {
+        top: 80px;
+        left: 100%;
     }
 }
