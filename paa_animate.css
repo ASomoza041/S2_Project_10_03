@@ -20,6 +20,7 @@
 
 
 /* Transition Effects */
+/* The code below holds the styles for the top nav links. The styles give the anchor tags a unique transition effect. The styles make the "a" tag change colors and have an underline appear. */
 nav#gameLinks a {
     position: relative;
     color: white;
@@ -49,7 +50,7 @@ nav#gameLinks a:hover::after {
 }
 
 /* Sprite Styles */
-/*  */
+/* The code below holds styles for the video game sprites. Each sprite is given different placements, spacings, and animation specifications to know what it's supposed to do. */
 div.sprite {
     position: absolute;
 }
